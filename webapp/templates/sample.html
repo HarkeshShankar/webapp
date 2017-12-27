@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://p.w3layouts.com/demos_new/template_demo/07-11-2017/appoint_my_doctor-demo_Free/673739834/web/css/style.css" type ='text/css'>
+</head>
+<body>
+<form method="Post">
+	<div class="banner">
+	<div class="heading">
+				
+	</div>
+		<div class="container">
+			<div class="heading">
+				<h2>Please Enter Patients Details</h2>
+				<p>Fill the form below and submit your query we will contact you as soon as possible.</p>
+			</div>
+		
+		
+			<div class="form">
+				<form action="/" method="post">
+					<ul class="field-list">
+						<li>
+							<label class="form-label"> 
+								Full Name 
+								<span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<input type="text" name="name" placeholder="Enter Patients Name" required >
+							</div>
+						</li>
+												<li>
+						<label class="form-label">
+							   AGE
+							   <span class="form-required"> * </span>
+							</label>
+
+							<div class="form-input">
+								<input type="number" min ='0' max='150' name="age" placeholder="AGE" required >
+							
+							</div>
+						</li>
+						
+						
+						<li>
+							<label class="form-label">
+							   Gender
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<select class="form-dropdown" name="gender" required>
+									<option value="">&nbsp;</option>
+									<option value="Male"> Male </option>
+									<option value="Female"> Female </option>
+								</select>
+							</div>
+						</li>
+						<li> 
+							<label class="form-label">
+							   Mobile Number
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<input type="tel" name="telno" placeholder="Mobile Number" required >
+							</div>
+						</li>
+						<li> 
+							<label class="form-label">
+							   E-Mail Address
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<input type="email" name="email" placeholder="myname@example.com" required>
+							
+							</div>
+						</li>
+
+						
+						<li>
+                          <label class="form-label"> 
+								DATE for app 
+								<span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<input type="date" name="date" placeholder="DATE for app" required  >
+							</div>
+						</li>
+						
+		
+	<script>
+document.write({%- print z %});
+  </script>			
+						
+						
+						
+						<li>
+							<label class="form-label">
+							   Time for app
+							   <span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<select class="form-dropdown" name="time" required>
+									<option value="">&nbsp;</option>
+									<option value="Morning"> Morning </option>
+									<option value="Afternoon"> Afternoon </option>
+									<option value="Evening"> Evening </option>
+								</select>
+							</div>
+						</li>
+
+						<li> 
+							<label class="form-label1">
+								Note:
+							</label>
+							<div class="form-input2">
+								<textarea rows="3" cols="10" name="note"></textarea>
+							
+							</div>
+						</li>
+						
+			
+		
+  </form>
+					</ul>
+					<input type="submit" value="Book Appointment" href='/'>	
+			</div>
+		</div>
+	</div>
+	</form>
+</body>
+</html>

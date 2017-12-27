@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/docs/4.0/examples/grid/grid.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <h3></h3>
+      <p></p>
+	 
+      
+	   {%- for st in sh %}
+	   <div class="row">
+        <div class="col-md-8">
+          {{ st.name_pa }}
+          <div class="row">
+            <div class="col-md-6">{{ st.age }}</div>
+			<div class="col-md-6">{{ st.id }}</div>
+			<div class="col-md-6">{{ st.date_pa }}</div>
+			<div class="col-md-6">{{ st.note }}</div>
+          </div>
+        </div>
+		
+        <div class="col-md-4" ><textarea rows="5" cols="45" name="note"></textarea> reference</div>
+      </div>
+	  {%- endfor %}
+      
+    </div> 
+  </body>
+</html>
